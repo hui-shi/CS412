@@ -1,1 +1,1 @@
-Repo for CS 412: Full Stack Development
+Pset 1: Functions
