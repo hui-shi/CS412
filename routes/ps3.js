@@ -6,18 +6,22 @@ const router = express.Router();
 //http://localhose:3000/ps3 you just need the / I guess
 
 //GET method that returns a fixed string into JSON object and is rendered through Pug
+//http://localhost:3000/ps3
 router.get('/', function(req, res, next) {
     res.render('get', {string: 'Hey now'});
 });
 
 //POST method that takes post request from Postman and sends to Pug for rendering
 //apparently this doesn't actually display in the webpage and to test it you have to use Postman
+//http://localhost:3000/ps3
 router.post('/', function(req, res, next) {
-    res.render('post', {string: req.body.string, len: req.body.string.length});
+    res.render('post', {string: req.body.string, length: req.body.string.length});
 });
 
 //GET method that reads input parameter from URL and passes as JSON to Pug for rendering
-router.get('/:name', function(req, res, next) {
+//http://localhost:3000/ps3/name/Bob
+//In Postman, get method, don't fill out params section, just modify URL
+router.get('/name/:name', function(req, res, next) {
     res.render('get2', {name: req.params.name});
 });
 
