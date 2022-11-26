@@ -1,1 +1,1 @@
-Repo for CS 412: Full Stack Development
+Repo for Pset 5: MongoDB Puzzles
