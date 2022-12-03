@@ -1,0 +1,25 @@
+{
+  "name": "untitled1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "type": "module"
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "fetch": "^1.1.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-fetch": "^3.3.0",
+    "node-fetch-commonjs": "^3.2.4",
+    "pug": "2.0.0-beta11",
+    "request": "^2.88.2",
+    "request-promise-lite": "^0.16.0",
+    "require": "^2.4.20"
+  }
+}
