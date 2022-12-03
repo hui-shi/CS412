@@ -1,0 +1,14 @@
+extends layout
+
+//Part E: back-end Pug template
+block content
+    h1= title
+    p Welcome to #{title}
+
+    body
+        form(action="http://localhost:3000/ps4/form" method='POST')
+            input#search(type='any' name='city' placeholder="Boston")
+            button(type='submit') Submit
+
+    p The weather is
+    p #{data}
